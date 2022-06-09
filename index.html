@@ -23,6 +23,11 @@
                 <input type="text" class="form-control" v-model="message">
                 <button class="btn btn-dark text-danger"@click="peccato">Sin</button>
             </div>
+
+            <div>
+                <img v-if="selected" :src="selected" alt=""/>
+                <button class="btn btn-primary" @click="peccato">scarica Immagine</button>
+            </div>
         </div>
     </div>
 
